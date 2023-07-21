@@ -2,11 +2,26 @@
   font-family: 'Muller';
   font-weight: 500;
   font-style: normal;
+  position: absolute;
+  // left: calc(50% - 780px);
+  top: 48px;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+.header__tel {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 27px;
+  height: 26px;
 }
 
 .header__contacts {
   display: flex;
   align-items: center;
+  position: relative;
+  padding-left: 33px;
 
   & a {
     font-family: 'Muller';
@@ -14,10 +29,7 @@
     font-style: normal;
     color: #000000;
     text-decoration: none;
-  }
-
-  &::before {
-
+    font-size: 21px;
   }
 }
 
