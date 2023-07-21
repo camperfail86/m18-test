@@ -1,0 +1,29 @@
+.header {
+  font-family: 'Muller';
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+
+  & a {
+    font-family: 'Muller';
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &::before {
+
+  }
+}
+
+.header__container {
+  width: 1660px;
+  margin: 48px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
