@@ -1,0 +1,80 @@
+@import '../../../scss/variables';
+
+.chief {
+  font-weight: 400;
+}
+
+.chief__video {
+  position: absolute;
+  top: 20px;
+  right: -100px;
+  z-index: -1;
+}
+
+.chief__container {
+  width: 1660px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.chief__title {
+  font-size: 64px;
+  padding-top: 308px;
+  width: 530px;
+}
+
+.chief__text {
+  font-size: 21px;
+  margin: 34px 0 44px 0;
+  width: 460px;
+}
+
+.chief__button {
+  color: $color-white;
+  background-color: $color-orange;
+  padding: 18px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: $color-orange-active;
+  }
+}
+
+.chief__leaf {
+  color: $color-orange;
+  margin-top: 260px;
+  margin-bottom: 66px;
+  width: 249px;
+  position: relative;
+  padding-left: 53px;
+  display: block;
+  cursor: pointer;
+
+  &:hover .chief__leaf-image {
+    display: none;
+
+    ~ .chief__leaf-image--active {
+      display: block;
+      position: absolute;
+      width: 34px;
+      height: 33px;
+      top: 0;
+      left: 5px;
+    }
+  }
+}
+
+.chief__leaf-image {
+  position: absolute;
+  width: 44px;
+  height: 33px;
+  top: 0;
+  left: 0;
+}
+
+.chief__start {
+  color: $color-gray;
+  margin-left: 30px;
+  font-size: 16px;
+}

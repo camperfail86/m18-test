@@ -1,9 +1,11 @@
+@import '../../../scss/variables';
+
 .header {
   font-family: 'Muller';
   font-weight: 500;
   font-style: normal;
   position: absolute;
-  // left: calc(50% - 780px);
+  z-index: 2;
   top: 48px;
   left:50%;
   transform:translate(-50%, -50%);
@@ -22,6 +24,11 @@
   align-items: center;
   position: relative;
   padding-left: 33px;
+  z-index: 10;
+
+  &:hover a {
+    color: $color-orange;
+  }
 
   & a {
     font-family: 'Muller';
