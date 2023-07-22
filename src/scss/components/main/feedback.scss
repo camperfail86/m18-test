@@ -62,6 +62,10 @@
   padding: 16px 75px;
   margin: 17px auto 0px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-orange-active;
+  }
 }
 
 .feedback__policy {
