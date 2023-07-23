@@ -1,0 +1,17 @@
+@import '../../../scss/variables';
+
+.slider__title {
+  font-size: 40px;
+  width: 979px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.slider__text {
+  font-size: 16px;
+  color: $color-green;
+  width: 979px;
+  text-align: left;
+  margin: 8px auto 52px auto;
+  text-transform: uppercase;
+}
