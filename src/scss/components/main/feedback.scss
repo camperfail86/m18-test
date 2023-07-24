@@ -3,6 +3,7 @@
 .feedback {
   margin: 0 0 134px 0;
   padding-top: 160px;
+  position: relative;
 }
 
 .feedback__container {
@@ -17,9 +18,27 @@
 
   & input {
     border: 1px solid $color-gray-footer;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 18px 0 18px 25px;
     margin-bottom: 30px;
+    outline: none;
+    width: 100%;
+
+    &:active {
+      border: 1px solid $color-orange;
+    }
+
+    &:hover {
+      border: 1px solid $color-orange;
+    }
+
+    &:focus {
+      border: 1px solid $color-orange;
+    }
+
+    &:focus-visible {
+      border: 1px solid $color-orange;
+    }
   }
 }
 
@@ -81,4 +100,37 @@
   display: block;
   text-align: center;
   color: $color-orange;
+}
+
+.feedback__name,
+.feedback__email,
+.feedback__tel {
+  position: relative;
+  width: 100%;
+}
+
+.feedback__name-input,
+.feedback__email-input,
+.feedback__tel-input {
+  &:hover + span {
+    color: $color-orange;
+  }
+
+  &:focus + span {
+    color: $color-orange;
+  }
+}
+
+.feedback__name-text,
+.feedback__email-text,
+.feedback__tel-text {
+  position: absolute;
+  font-size: 13px;
+  top: -5px;
+  left: 18px;
+  color: $color-gray;
+  background-color: $color-white;
+  padding: 0 7px;
+  display: none;
+  z-index: 2;
 }

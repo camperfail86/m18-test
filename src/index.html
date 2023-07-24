@@ -10,13 +10,6 @@
 <body>
 	@@include('components/page-blocks/_header.html')
 	<main class="main">
-		<div class="modal">
-			<div class="modal__content">
-				<h2 class="modal__title">Узнайте о запуске сервиса первым</h2>
-				<span class="modal__image --svg__okay"></span>
-				<p class="modal__text">Спасибо! Мы будем держать вас в курсе обновлений</p>
-			</div>
-		</div>
 		<section class="chief">
 			<div class="chief__container">
 				<h1 class="chief__title">Ремонт квартир в типовых домах</h1>
@@ -90,25 +83,43 @@
 							<p>Белые стены в уютной гостиной</p>
 						</div>
 					</div>
-					<div class="swiper-buttons">
-						<div class="swiper-btn-prev"></div>
-						<div class="swiper-btn-next"></div>
-					</div>
 				</div>
 			</div>
 		</section>
 
 		<section class="feedback" id="feedback">
-			<div class="feedback__container">
-				<h2 class="feedback__title">Узнайте о запуске сервиса первым</h2>
-				<p class="feedback__text"><span class="feedback__doors --svg__doors"></span>
-					Первым 10 клиентам стальная входная дверь в подарок</p>
-				<input class="feedback__name" type="text" placeholder="Имя и фамилия*">
-				<input class="feedback__email" type="text" placeholder="E-mail адрес*">
-				<input class="feedback__tel" type="text" placeholder="Телефон">
-				<button class="feedback__button">Подписаться</button>
-				<p class="feedback__policy">* Обязательные для заполнения поля<span class="feedback__policy-text">Политика конфиденциальности</span></p>
-			</div>
+			<form>
+				<div class="feedback__container">
+					<div class="modal">
+						<div class="modal__content">
+							<h2 class="modal__title">Узнайте о запуске сервиса первым</h2>
+							<span class="modal__image --svg__okay"></span>
+							<p class="modal__text">Спасибо! Мы будем держать вас в курсе обновлений</p>
+						</div>
+					</div>
+					<div class="swiper-buttons">
+						<div class="swiper-btn-prev"></div>
+						<div class="swiper-btn-next"></div>
+					</div>
+					<h2 class="feedback__title">Узнайте о запуске сервиса первым</h2>
+					<p class="feedback__text"><span class="feedback__doors --svg__doors"></span>
+						Первым 10 клиентам стальная входная дверь в подарок</p>
+					<div class="feedback__name">
+						<input class="feedback__name-input" type="text" placeholder="Имя и фамилия*" required>
+						<span class="feedback__name-text">Имя и фамилия*</span>
+					</div>
+					<div class="feedback__email">
+						<input class="feedback__email-input" type="text" placeholder="E-mail адрес*" required>
+						<span class="feedback__email-text">E-mail адрес*</span>
+					</div>
+					<div class="feedback__tel">
+						<input class="feedback__tel-input" type="text" placeholder="Телефон">
+						<span class="feedback__tel-text">Телефон</span>
+					</div>
+					<button type="submit" class="feedback__button">Подписаться</button>
+					<p class="feedback__policy">* Обязательные для заполнения поля<span class="feedback__policy-text">Политика конфиденциальности</span></p>
+				</div>
+			</form>
 		</section>
 	</main>
 	@@include('components/page-blocks/_footer.html')
